@@ -7,6 +7,7 @@ angular.module('LunchCheck', [])
 LunchCheckController.$inject = ['$scope', '$filter'];
 function LunchCheckController ($scope, $filter, $injector) {
   $scope.dishnames = "";
+  $scope.message = "";
   $scope.buttonClick = function () {
       if($scope.dishnames){
           var dishes = $scope.dishnames.split(',');
